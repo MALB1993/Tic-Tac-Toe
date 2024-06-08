@@ -36,5 +36,8 @@
   "bugs": {
     "url": "https://github.com/MALB1993/Tic-Tac-Toe/issues"
   },
-  "homepage": "https://github.com/MALB1993/Tic-Tac-Toe#readme"
+  "homepage": "https://github.com/MALB1993/Tic-Tac-Toe#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
 }
