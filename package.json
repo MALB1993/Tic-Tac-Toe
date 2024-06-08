@@ -1,0 +1,40 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "A simple command-line Tic-Tac-Toe game implemented in Node.js. Enjoy the classic two-player game where players take turns marking spaces in a 3x3 grid, aiming to achieve three marks in a row horizontally, vertically, or diagonally. Have fun playing against a friend or challenge yourself against an AI opponent!",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch assets/scss:assets/css",
+    "build": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MALB1993/Tic-Tac-Toe.git"
+  },
+  "keywords": [
+    "tic-tac-toe",
+    "game",
+    "Node.js",
+    "command-line",
+    "CLI",
+    "two-player",
+    "multiplayer",
+    "AI",
+    "artificial",
+    "intelligence",
+    "turn-based",
+    "grid",
+    "3x3",
+    "strategy",
+    "classic",
+    "fun",
+    "challenge",
+    "entertainment"
+  ],
+  "author": "@MLAB1993",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MALB1993/Tic-Tac-Toe/issues"
+  },
+  "homepage": "https://github.com/MALB1993/Tic-Tac-Toe#readme"
+}
