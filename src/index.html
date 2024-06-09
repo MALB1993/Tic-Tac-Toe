@@ -1,15 +1,63 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap w/ Vite</title>
-    <script type="module" src="./js/main.js"></script>
-  </head>
-  <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Vite!</h1>
-      <button class="btn btn-primary">Primary button</button>
-    </div>
-  </body>
+
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+    <title>Tic Tac Toc</title>
+    <script type="module" src="./js/main.js" defer></script>
+</head>
+
+<body>
+    <div class="container-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <ul class="list-unstyled">
+                        <li class="border-dark my-2 py-2">
+                            <button class="btn btn-sm btn-dark" id="new-game">New Game</button>
+                        </li>
+
+                        <li class="border-bottom border-dark text-center">
+                            <h5>Score</h5>
+                        </li>
+                        <li class="text-center my-2 d-flex justify-content-between">
+                            <p class="d-flex justify-content-between">
+                                <span class="mx-2" id="player_one">---</span> 
+                                <span class="badge bg-dark" id="player_one_score">0</span>
+                            </p>
+
+                            <div class="vs"><span>VS</span><span>/</span></div>
+
+                            <p class="d-flex justify-content-between">
+                                <span class="mx-2" id="player_two">---</span> 
+                                <span class="badge bg-dark" id="player_two_score">0</span>
+                            </p>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+                <div class="col-9 d-flex justify-content-center align-items-center">
+                    <div class="game-board">
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
 </html>

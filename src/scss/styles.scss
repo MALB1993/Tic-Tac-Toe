@@ -1,2 +1,97 @@
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
+
+@import "fonts/font";
+
+@import "variables/variables";
+
+@import "colors/color";
+//========================= styles
+
+body {
+
+    @extend %font-light;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+
+    // styles for all child of the body
+    background-color: #00000031;
+
+    // parent element of the base structure game
+    .container-box {
+        width: 90%;
+        height: 90vh;
+        margin: 2% auto;
+        border-radius: 12px;
+        text-align: justify;
+        text-justify: inter-word;
+        background-color: #f5f5f5;
+        border: 1px solid #00000031;
+        box-shadow: 0 0 10px 0 #00000031;
+    }
+
+    .vs {
+        position: relative;
+
+        span {
+            position: absolute;
+
+            &:nth-child(1) {
+                @extend %font-semibold;
+                z-index: 999;
+            }
+
+            &:nth-child(2) {
+                color: red;
+                font-size: 40px;
+                top: -18px;
+                left: 3px;
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+
+
+    .game-board {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
+        gap: 5px;
+        margin: 5% auto;
+    }
+
+    .cell {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 117px;
+        font-weight: lighter;
+        cursor: pointer;
+        border: 3px solid #333;
+        border-radius: 8px;
+    }
+
+    .cell.x {
+        background-color: lightblue;
+        color: blue;
+    }
+
+    .cell.o {
+        background-color: lightcoral;
+        color: red;
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
